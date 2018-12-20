@@ -1,0 +1,9 @@
+{
+	"name": "easysoftware/mod_calculoid",
+	"type": "joomlatools-composer",
+	"license": "proprietary",
+	"description": "mod_calculoid",
+	"require": {
+		"joomlatools/composer": "*"
+	}
+}

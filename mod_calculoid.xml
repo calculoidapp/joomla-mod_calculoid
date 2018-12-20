@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	
+	<name>MOD_CALCULOID</name>
+	
+	<creationDate>2014-03-26</creationDate>
+	
+	<author>EasyJoomla.org</author>
+	<authorEmail>support@easyjoomla.org</authorEmail>
+	<authorUrl>http://www.easyjoomla.org</authorUrl>
+	
+	<copyright>Copyright 2014 EasyJoomla.org - All rights reserved.</copyright>
+	<license>http://opensource.org/licenses/GPL-3.0 GPL-3.0</license>
+	
+	<version>2.1.0</version>
+	<description>MOD_CALCULOID_DESC</description>
+	
+	<files>
+		<filename module="mod_calculoid">mod_calculoid.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_calculoid.xml</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_calculoid.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_calculoid.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="calc_url" type="hidden" default="" />
+				<field name="calc_path_css" type="hidden" default="" />
+				<field name="calc_path_js" type="hidden" default="" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="calc_id" type="text" label="MOD_CALCULOID_PARAM_CALC_ID" description="MOD_CALCULOID_PARAM_CALC_ID_DESC" />
+				<field name="calc_key" type="text" default="demo2014" label="MOD_CALCULOID_PARAM_CALC_KEY" description="MOD_CALCULOID_PARAM_CALC_KEY_DESC" />
+				<field name="show_title" type="radio" default="1" label="MOD_CALCULOID_PARAM_SHOW_TITLE">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="show_description" type="radio" default="1" label="MOD_CALCULOID_PARAM_SHOW_DESCRIPTION">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="values" type="textarea" default="" label="MOD_CALCULOID_PARAM_VALUES" description="MOD_CALCULOID_PARAM_VALUES_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="show_footer" type="radio" default="1" label="MOD_CALCULOID_PARAM_SHOW_FOOTER">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_css" type="radio" default="1" label="MOD_CALCULOID_PARAM_USE_CSS">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<!--
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+				-->
+			</fieldset>
+		</fields>
+	</config>
+	
+	<updateservers>
+		<server type="easyjoomla" priority="1" name="Easy Joomla Update"><![CDATA[http://www.easyjoomla.org/index.php?option=com_easyupdate&view=easyupdate&element=mod_calculoid&type=module]]></server>
+	</updateservers>
+	
+</extension>
